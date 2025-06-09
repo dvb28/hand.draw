@@ -19,6 +19,7 @@ class HandDrawCNN(nn.Module):
         self.fc1 = nn.Linear(in_features=64*7 *7, out_features=512)
         self.dropout = nn.Dropout(0.5)
         self.fc2 = nn.Linear(in_features=512, out_features=num_classes)
+        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
         x = self.layers(x)
@@ -26,4 +27,5 @@ class HandDrawCNN(nn.Module):
         x = self.fc1(x)
         x = self.dropout(x)
         x = self.fc2(x)
+        x = self.softmax(x)
         return x
