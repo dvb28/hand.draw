@@ -9,7 +9,7 @@ Hand Draw sử dụng mô hình học sâu CNN để nhận diện các hình v�
 - Hiển thị kết quả: Kết quả nhận class diện được hiển thị trên màn hình.
 
 ## Preview
-![preview](./plots/rag_demo.gif)
+https://github.com/user-attachments/assets/5a390c8d-23f9-47cd-b49d-840a4e5d8ca8
 
 ## Dataset
 Sử dụng 10 class trong bộ
